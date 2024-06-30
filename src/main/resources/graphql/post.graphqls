@@ -1,0 +1,8 @@
+extend type Query {
+    getPostById(id: Float): Post
+}
+
+# The Root Mutation for the application
+#type Mutation {
+#    createUsers(name: String!, email: String!) : User!
+#}
