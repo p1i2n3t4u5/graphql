@@ -10,5 +10,7 @@ public interface UserService {
   public List<User> getAllUsers();
   
   public Optional<User> getUserById(Long id);
+  
+  public User upsertUser(User user);
 
 }

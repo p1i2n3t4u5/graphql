@@ -3,7 +3,7 @@ extend type Query {
 }
 
 # The Root Mutation for the application
-#type Mutation {
-#    createUsers(name: String!, email: String!) : User!
-#}
+extend type Mutation {
+    upsertUser(id:ID!, userName: String!, emailId: String!) : User!
+}
 
